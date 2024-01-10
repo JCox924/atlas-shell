@@ -1,2 +1,2 @@
 #!/bin/bash
-awd "NR=3" iacta
+awd 'NR==3' iacta
