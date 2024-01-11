@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d ! -name /fun_with_the_shell | wc -1
+find . -mindepth 1 -type d ! -name . -print | wc -1
