@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# This script uses a while loop to print out the numbers 1-20 but at certain numbers it changes behavior
+i=1
+while [ $i -le 20 ]
+do
+        case $i in 
+        4)      
+                printf "4\n"
+                printf "bad luck from China\n";;
+        9)
+                printf "9\n"
+                printf "bad luck from Japan\n";;
+        17)
+                printf "17\n"
+                printf "bad luck from Italy\n";;
+        esac
+        printf "%d\n" "$i"
+        ((i++))
+done
