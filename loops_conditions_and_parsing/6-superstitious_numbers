@@ -6,13 +6,10 @@ do
 	printf "%d\n" "$i"
         case $i in 
         4)     
-                printf "4\n"
                 printf "bad luck from China\n";;
         9)
-                printf "9\n"
                 printf "bad luck from Japan\n";;
         17)
-                printf "17\n"
                 printf "bad luck from Italy\n";;
         esac
         ((i++))
