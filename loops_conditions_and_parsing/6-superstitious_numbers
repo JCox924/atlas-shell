@@ -3,8 +3,9 @@
 i=1
 while [ $i -le 20 ]
 do
+	printf "%d\n" "$i"
         case $i in 
-        4)      
+        4)     
                 printf "4\n"
                 printf "bad luck from China\n";;
         9)
@@ -14,6 +15,5 @@ do
                 printf "17\n"
                 printf "bad luck from Italy\n";;
         esac
-        printf "%d\n" "$i"
         ((i++))
 done
