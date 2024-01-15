@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#This script uses a while loop with a nested if statement to print "Best School" 10 time and on the 9th line print "Hi"
+i=1
+while [ $i -ge 10 ]
+do 
+	if [ $i -eq 9 ]; then
+        printf "Best School\n"
+        printf "Hi\n"
+        else 
+        printf "Best School\n"
+        fi
+done        
+
