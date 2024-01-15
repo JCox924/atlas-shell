@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script uses a while loop to print "bad luck" on line 4 and "good luck" on line 8 and "Best School" for the rest of the lines until 10
+i=1
+while [ $i -le 10 ]
+do 
+        if [ $i -eq 4 ]; then
+        printf "bad luck\n"
+        elif [ $i -eq 8 ]; then
+        printf "good luck\n"
+        else 
+        printf "Best School\n"
+        fi
+        ((i++))
+done
