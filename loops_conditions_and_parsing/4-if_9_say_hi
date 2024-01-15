@@ -9,5 +9,6 @@ do
         else 
         printf "Best School\n"
         fi
+	((i++))
 done        
 
