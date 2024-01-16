@@ -1,4 +1,4 @@
-#!/user/bin/env bash
+#!/usr/bin/env bash
 #This script acts as a clock all the way up to 12 hours and 59 minutes
 h=0
 m=1
