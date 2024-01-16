@@ -20,15 +20,10 @@ h=0
 m=1
    while [ $h -le 12 ]
    do
-        print "Hour: " "$h"
+        echo "Hour: $h"
         while [ $m -le 59 ]
         do
-        printf "%d\n" "$m"
-         if [ $m -eq 59 ];then
-         
-         m=1
-         
-         fi
+        printf "%02d\n" "$m"
          ((m++))
         done
         ((h++))
