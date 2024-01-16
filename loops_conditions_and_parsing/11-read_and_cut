@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-#This script displays username, user id and Home dir for the user
+# This script displays username, user id and home dir for the user using cut
 
-while IFS=':' read -r username _ userid _ _ homedir _; do
-    echo "Username: $username, User ID: $userid, Home Directory: $homedir"
+while IFS= read -r line; do
+    echo "$line" | cut -d: -f1,3,6
 done < /etc/passwd
