@@ -7,9 +7,11 @@ m=1
         while [ $m -le 59 ]
         do
         printf "%d\n" "$m"
-         if [ $m -eq 59 ];then
+	((m++))
+        done
+	if [ $m -eq 59 ];then
          m=1
          fi
-        done
+
    printf "%d\n" "$h"
    done
