@@ -13,6 +13,26 @@ m=1
          m=1
          fi
 
-   printf "%d\n" "Hour: $h"
-   ((h++))
+   printf "%d\n" "Hour: " + root@5d55b2f4e98046778744aa9b18a4ea36-2377118072:~/atlas-shell/loops_conditions_and_parsing# vim 7-clock 
+#!/user/bin/env bash
+#This script acts as a clock
+h=0
+m=1
+   while [ $h -le 12 ]
+   do
+        print "Hour: " "$h"
+        while [ $m -le 59 ]
+        do
+        printf "%d\n" "$m"
+         if [ $m -eq 59 ];then
+         
+         m=1
+         
+         fi
+         ((m++))
+        done
+        ((h++))
+        
+   
+   
    done
