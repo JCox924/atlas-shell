@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#This file print all files without their pathname
+for file in *
+do
+echo "${file#*-}"
+done
