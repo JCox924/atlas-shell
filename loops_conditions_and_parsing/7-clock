@@ -1,0 +1,15 @@
+#!/user/bin/env bash
+#This script acts as a clock all the way up to 12 hours and 59 minutes
+h=0
+m=1
+   while [ $h -le 12 ]
+   do
+        while [ $m -le 59 ]
+        do
+        printf "%d\n" "$m"
+         if [ $m -eq 59 ];then
+         m=1
+         fi
+        done
+   printf "%d\n" "$h"
+   done
